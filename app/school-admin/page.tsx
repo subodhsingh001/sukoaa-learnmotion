@@ -62,7 +62,7 @@ export default function SchoolAdminPage() {
   return (
     <Page>
       <PageHeader title="School administration" subtitle={overview?.school?.name ? `${overview.school.name} — manage people, classrooms and enrolment.` : "Manage people, classrooms and enrolment."}
-        actions={<LinkButton href="/school-admin/teachers">Teachers &amp; permissions</LinkButton>} />
+        actions={<><LinkButton href="/school-admin/structure">Academic structure</LinkButton><LinkButton href="/school-admin/teachers">Teachers &amp; permissions</LinkButton></>} />
       {flash}
       <div className="sk-grid cols-4">
         <Stat label="Classrooms" value={overview?.classrooms} icon={<School size={20} />} />

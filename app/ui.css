@@ -182,3 +182,21 @@ body { background: var(--sk-bg); color: var(--sk-text); font-family: var(--sk-fo
 @keyframes sk-push { from { transform: translateX(0); } to { transform: translateX(var(--d)); } }
 @keyframes sk-hl { 0%, 100% { opacity: .45; transform: scale(1); } 6%, 16% { opacity: 1; transform: scale(1.14); } 24% { opacity: .45; transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .sk-scene, .sk-points li { animation: none; opacity: 1; } }
+
+
+/* Patch 9: desktop sidebar collapse; mobile drawer stays full width */
+@media (min-width: 769px) {
+  .sk-sidebar, .sk-main { transition: width .2s ease, margin-left .2s ease; }
+  .sk-desktop-collapse { display: inline-flex; align-items: center; justify-content: center; margin-left: auto; border: 0; background: transparent; color: #fff; cursor: pointer; padding: 6px; border-radius: 8px; }
+  .sk-desktop-collapse:hover { background: rgba(255,255,255,.12); }
+  .sk-collapsed .sk-sidebar { width: 68px; }
+  .sk-collapsed .sk-main { margin-left: 68px; }
+  .sk-collapsed .sk-sidebar .sk-brand-title, .sk-collapsed .sk-sidebar .sk-nav-label, .sk-collapsed .sk-sidebar .sk-nav-text { display: none; }
+  .sk-collapsed .sk-sidebar .sk-brand { justify-content: center; flex-wrap: wrap; }
+  .sk-collapsed .sk-sidebar .sk-desktop-collapse { margin-left: 0; }
+  .sk-collapsed .sk-sidebar .sk-nav a, .sk-collapsed .sk-sidebar .sk-nav-link { justify-content: center; gap: 0; }
+}
+@media (max-width: 768px) {
+  .sk-desktop-collapse { display: none; }
+  .sk-collapsed .sk-sidebar { width: 264px; }
+}

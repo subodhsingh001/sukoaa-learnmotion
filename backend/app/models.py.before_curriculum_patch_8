@@ -1,0 +1,159 @@
+from datetime import datetime, timezone
+from sqlalchemy import String, ForeignKey, UniqueConstraint, DateTime, Integer, Boolean, Text
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from .db import Base
+
+def now(): return datetime.now(timezone.utc)
+
+class School(Base):
+    __tablename__ = 'schools'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String(160))
+
+class User(Base):
+    __tablename__ = 'users'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    email: Mapped[str] = mapped_column(String(254), unique=True, index=True)
+    full_name: Mapped[str] = mapped_column(String(140))
+    role: Mapped[str] = mapped_column(String(20))
+    password_hash: Mapped[str] = mapped_column(String(255))
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, server_default="true")
+    token_version: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+
+class Classroom(Base):
+    __tablename__ = 'classrooms'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    name: Mapped[str] = mapped_column(String(100))
+    teacher_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+
+class Enrollment(Base):
+    __tablename__ = 'enrollments'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    classroom_id: Mapped[int] = mapped_column(ForeignKey('classrooms.id'))
+    student_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    __table_args__ = (UniqueConstraint('classroom_id','student_id'),)
+
+class Lesson(Base):
+    __tablename__ = 'lessons'
+    slug: Mapped[str] = mapped_column(String(80), primary_key=True)
+    title: Mapped[str] = mapped_column(String(160))
+    subject: Mapped[str] = mapped_column(String(60))
+
+class Progress(Base):
+    __tablename__ = 'progress'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    lesson_slug: Mapped[str] = mapped_column(ForeignKey('lessons.slug'))
+    completed: Mapped[bool] = mapped_column(Boolean, default=False)
+    score: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    total: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now, onupdate=now)
+    __table_args__ = (UniqueConstraint('user_id','lesson_slug'),)
+
+class QuizAttempt(Base):
+    __tablename__ = 'quiz_attempts'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    lesson_slug: Mapped[str] = mapped_column(ForeignKey('lessons.slug'), index=True)
+    score: Mapped[int] = mapped_column(Integer)
+    total: Mapped[int] = mapped_column(Integer)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class Textbook(Base):
+    __tablename__ = 'textbooks'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    title: Mapped[str] = mapped_column(String(220))
+    board: Mapped[str] = mapped_column(String(20))
+    grade: Mapped[int] = mapped_column(Integer)
+    subject: Mapped[str] = mapped_column(String(100))
+    edition: Mapped[str] = mapped_column(String(100), default='')
+    filename: Mapped[str] = mapped_column(String(255))
+    storage_key: Mapped[str] = mapped_column(String(120), unique=True)
+    extraction_status: Mapped[str] = mapped_column(String(24), default='pending')
+    extracted_text: Mapped[str] = mapped_column(Text, default='')
+    uploaded_by: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class BookChapter(Base):
+    __tablename__ = 'book_chapters'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    textbook_id: Mapped[int] = mapped_column(ForeignKey('textbooks.id'), index=True)
+    number: Mapped[int] = mapped_column(Integer)
+    title: Mapped[str] = mapped_column(String(220))
+    source_text: Mapped[str] = mapped_column(Text, default='')
+    status: Mapped[str] = mapped_column(String(24), default='draft')
+    __table_args__ = (UniqueConstraint('textbook_id','number'),)
+
+
+class ChapterCurriculumMap(Base):
+    __tablename__ = 'chapter_curriculum_maps'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    textbook_id: Mapped[int] = mapped_column(ForeignKey('textbooks.id'), index=True)
+    chapter_id: Mapped[int] = mapped_column(ForeignKey('book_chapters.id'), unique=True)
+    board: Mapped[str] = mapped_column(String(30))
+    topic: Mapped[str] = mapped_column(String(220))
+    source: Mapped[str] = mapped_column(String(24), default='manual')
+    status: Mapped[str] = mapped_column(String(24), default='draft')
+    updated_by: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now, onupdate=now)
+
+
+class TeacherPermission(Base):
+    __tablename__ = 'teacher_permissions'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    teacher_id: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    permission: Mapped[str] = mapped_column(String(40))
+    __table_args__ = (UniqueConstraint('teacher_id', 'permission'),)
+
+class ChapterPageRange(Base):
+    __tablename__ = 'chapter_page_ranges'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    chapter_id: Mapped[int] = mapped_column(ForeignKey('book_chapters.id'), unique=True)
+    printed_start: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    printed_end: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    pdf_offset: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    source_available: Mapped[bool] = mapped_column(Boolean, default=False)
+
+class ChapterAsset(Base):
+    __tablename__ = 'chapter_assets'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    chapter_id: Mapped[int] = mapped_column(ForeignKey('book_chapters.id'), index=True)
+    kind: Mapped[str] = mapped_column(String(24))
+    title: Mapped[str] = mapped_column(String(220))
+    body: Mapped[str] = mapped_column(Text, default='')
+    status: Mapped[str] = mapped_column(String(24), default='draft')
+    created_by: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
+class AssetAttempt(Base):
+    """A student's server-graded attempt at a published chapter quiz."""
+    __tablename__ = 'asset_attempts'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    asset_id: Mapped[int] = mapped_column(ForeignKey('chapter_assets.id'), index=True)
+    score: Mapped[int] = mapped_column(Integer)
+    total: Mapped[int] = mapped_column(Integer)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class AIUsage(Base):
+    """One row per AI generation: powers per-school monthly credit limits."""
+    __tablename__ = 'ai_usage'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    chapter_id: Mapped[int] = mapped_column(ForeignKey('book_chapters.id'))
+    kind: Mapped[str] = mapped_column(String(24))
+    engine: Mapped[str] = mapped_column(String(24))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now, index=True)

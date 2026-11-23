@@ -1,3 +1,4 @@
+from .school_structure_routes import router as school_structure_router
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,6 +13,7 @@ from .school_routes import router as school_router
 from .assessment_routes import router as assessment_router
 from .curriculum_routes import router as curriculum_router
 from .textbook_routes import router as textbook_router
+from .curriculum_mapping_routes import router as curriculum_mapping_router
 from .ai_routes import router as ai_router
 from .student_routes import router as student_router
 from .auth_routes import router as auth_router
@@ -127,11 +129,13 @@ def teacher_summary(user:User=Depends(current_user),db:Session=Depends(get_db)):
     return {'students':rows}
 
 app.include_router(school_router)
+app.include_router(school_structure_router)
 
 app.include_router(assessment_router)
 
 app.include_router(curriculum_router)
 app.include_router(textbook_router)
+app.include_router(curriculum_mapping_router)
 app.include_router(ai_router)
 app.include_router(student_router)
 

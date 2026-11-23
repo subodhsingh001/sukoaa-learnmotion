@@ -91,6 +91,20 @@ class BookChapter(Base):
     __table_args__ = (UniqueConstraint('textbook_id','number'),)
 
 
+class ChapterCurriculumMap(Base):
+    __tablename__ = 'chapter_curriculum_maps'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    textbook_id: Mapped[int] = mapped_column(ForeignKey('textbooks.id'), index=True)
+    chapter_id: Mapped[int] = mapped_column(ForeignKey('book_chapters.id'), unique=True)
+    board: Mapped[str] = mapped_column(String(30))
+    topic: Mapped[str] = mapped_column(String(220))
+    source: Mapped[str] = mapped_column(String(24), default='manual')
+    status: Mapped[str] = mapped_column(String(24), default='draft')
+    updated_by: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now, onupdate=now)
+
+
 class TeacherPermission(Base):
     __tablename__ = 'teacher_permissions'
     id: Mapped[int] = mapped_column(primary_key=True)
@@ -143,3 +157,38 @@ class AIUsage(Base):
     kind: Mapped[str] = mapped_column(String(24))
     engine: Mapped[str] = mapped_column(String(24))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now, index=True)
+
+# School Management foundation: separate records preserve legacy classrooms/enrollments.
+class AcademicYear(Base):
+    __tablename__ = 'academic_years'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    name: Mapped[str] = mapped_column(String(40))
+    start_date: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    end_date: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    is_active: Mapped[bool] = mapped_column(Boolean, default=False, server_default='false')
+    __table_args__ = (UniqueConstraint('school_id','name'),)
+
+class SchoolSection(Base):
+    __tablename__ = 'school_sections'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    academic_year_id: Mapped[int] = mapped_column(ForeignKey('academic_years.id'))
+    grade: Mapped[int] = mapped_column(Integer)
+    section: Mapped[str] = mapped_column(String(20))
+    __table_args__ = (UniqueConstraint('academic_year_id','grade','section'),)
+
+class SchoolSubject(Base):
+    __tablename__ = 'school_subjects'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    school_id: Mapped[int] = mapped_column(ForeignKey('schools.id'), index=True)
+    name: Mapped[str] = mapped_column(String(100))
+    code: Mapped[str] = mapped_column(String(30))
+    __table_args__ = (UniqueConstraint('school_id','code'),)
+
+class SectionSubject(Base):
+    __tablename__ = 'section_subjects'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    section_id: Mapped[int] = mapped_column(ForeignKey('school_sections.id'))
+    subject_id: Mapped[int] = mapped_column(ForeignKey('school_subjects.id'))
+    __table_args__ = (UniqueConstraint('section_id','subject_id'),)

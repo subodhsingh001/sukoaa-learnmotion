@@ -16,7 +16,12 @@ from .security import current_user
 from . import storyboard as sb
 
 router = APIRouter(prefix='/textbooks', tags=['Textbooks'])
-STORAGE = Path(os.environ.get('SUKOAA_UPLOAD_DIR', './storage/textbooks')).resolve()
+# Resolve uploads relative to the backend directory, not the terminal's current directory.
+# Keep compatibility with files uploaded before this change from the project root.
+_BACKEND_ROOT = Path(__file__).resolve().parents[1]
+_UPLOAD_SETTING = Path(os.environ.get('SUKOAA_UPLOAD_DIR', 'storage/textbooks')).expanduser()
+STORAGE = (_UPLOAD_SETTING if _UPLOAD_SETTING.is_absolute() else _BACKEND_ROOT / _UPLOAD_SETTING).resolve()
+_LEGACY_STORAGE = (Path.cwd() / _UPLOAD_SETTING).resolve() if not _UPLOAD_SETTING.is_absolute() else STORAGE
 MAX_BYTES = 20 * 1024 * 1024
 
 def allowed(db, user, permission):
@@ -64,7 +69,7 @@ def chapter_json(c):
 
 def page_ranges(items):
     """Use the next chapter's TOC page as the end boundary."""
-    ordered=sorted(items,key=lambda x:x['number'])
+    ordered=sorted(items,key=lambda x:x['page'])
     return [(item, ordered[i+1]['page']-1 if i+1<len(ordered) else None) for i,item in enumerate(ordered)]
 
 def normalized_title(title, page):
@@ -104,6 +109,190 @@ def detect_contents(reader):
             found.append({'number':number,'title':title,'page':page})
     return found if len(found)>=2 else []
 
+def _readable_pdf_text(value):
+    """Decode PDFs whose embedded font maps Latin letters into Unicode PUA."""
+    return ''.join(chr(ord(ch)-0xF000) if 0xF020 <= ord(ch) <= 0xF07E else ch for ch in (value or ''))
+
+
+def detect_chapter_headings(reader):
+    """Fallback when no numbered contents page exists (e.g. NCERT Our Pasts II).
+
+    Only identify sequential, prominent numbered headings; do not confuse
+    exercise numbers, references to chapters, or printed page numbers.
+    """
+    results=[]
+    expected=1
+    for index,page in enumerate(reader.pages):
+        if expected > 100:
+            break
+        text=_readable_pdf_text(page.extract_text() or '')
+        lines=[re.sub(r'\s+',' ',line).strip() for line in text.splitlines()]
+        # A chapter number appears as a standalone digit, followed by an
+        # uppercase title (sometimes after the introductory paragraph).
+        for j,line in enumerate(lines[:75]):
+            inline=re.fullmatch(r'(\d{1,2})\s+([A-Z][A-Z\s,\-–&’\'()]{6,100})',line)
+            suffix=(index>=10 and line.endswith(str(expected)) and len(line)>len(str(expected))+6 and
+                    line[:-len(str(expected))].isupper() and
+                    j>0 and lines[j-1].isupper())
+            if line != str(expected) and not (inline and int(inline.group(1))==expected) and not suffix:
+                continue
+            chunks=[inline.group(2)] if inline else ([lines[j-1],line[:-len(str(expected))]] if suffix else [])
+            following=[] if (inline or suffix) else lines[j+1:j+13]
+            if not inline and expected==9 and 'THE MAKING OF' in following:
+                following=following[following.index('THE MAKING OF'):]
+            for candidate in following:
+                if not candidate or candidate in ('?', '2018-19'):
+                    break
+                candidate=re.sub(r'(?<=[A-Z])'+str(expected)+r'$', '', candidate).strip()
+                if not re.fullmatch(r'[A-Z][A-Z\s,\-–&’\'()]+',candidate) or len(candidate)<4:
+                    break
+                if not chunks or candidate != chunks[-1]:
+                    chunks.append(candidate)
+                if len(' '.join(chunks))>90:
+                    break
+            title=' '.join(chunks).strip()
+            if len(title)<7 or len(title)>110 or len(title.split())>17:
+                continue
+            # Skip a printed page number mistakenly matched as chapter number.
+            # Require at least 3 pages between consecutive chapter starts.
+            if results and index+1-results[-1]['pdf_start']<3:
+                continue
+            printed_start=index+1-(results[0]['pdf_offset'] if results else 0)
+            for first in lines[:4]:
+                m=re.match(r'^(\d{1,3})(?:\s|OUR PASTS|$)',first)
+                if m and 1<=int(m.group(1))<=len(reader.pages) and abs((index+1)-int(m.group(1)))<=30:
+                    printed_start=int(m.group(1))
+                    break
+            results.append({'number':expected,'title':title.title(),
+                            'page':printed_start,'pdf_start':index+1,
+                            'pdf_offset':index+1-printed_start})
+            expected+=1
+            break
+    return results if len(results)>=2 else []
+
+
+def auto_chapter_ranges(reader):
+    """Try TOC verification first, then actual chapter-heading discovery."""
+    detected, skipped=verified_chapter_ranges(reader)
+    if detected:
+        return detected,skipped
+    headings=detect_chapter_headings(reader)
+    return [(item, (headings[i+1]['pdf_start']-1-item['pdf_offset'])
+             if i+1<len(headings) else len(reader.pages)-item['pdf_offset'])
+            for i,item in enumerate(headings)], 0
+
+def verified_chapter_ranges(reader):
+    """TOC-driven detection, checked against chapter headings in actual PDF pages.
+
+    Only include chapters physically present in this PDF. Never guess a
+    chapter boundary from a page number without corroborating the heading.
+    """
+    items = detect_contents(reader)
+    total = len(reader.pages)
+    if not items:
+        return [], 0
+    # Search for chapter headings on actual pages. Printed page numbers may
+    # differ from PDF page indices because of cover/front matter.
+    normalized = lambda value: re.sub(r'[^a-z0-9]+', '', value.lower())
+    page_headings = [[normalized(line) for line in (page.extract_text() or '').splitlines()[:18]] for page in reader.pages]
+    candidates = []
+    # Establish likely PDF-to-printed offset using the earliest text pages.
+    known_offset = 0
+    for item in items[:3]:
+        title = normalized(item['title'])
+        for index, lines in enumerate(page_headings):
+            if title in lines:
+                known_offset = index + 1 - item['page']
+                break
+        else:
+            continue
+        break
+    # Scanned chapters have no embedded text: OCR only expected start pages,
+    # not the whole book. This keeps detection fast for large scanned PDFs.
+    ocr_available = resolve_tesseract()
+    fitz_doc = None
+    if ocr_available:
+        try:
+            import fitz, pytesseract
+            from PIL import Image
+        except ImportError:
+            ocr_available = None
+    for item in items:
+        title = normalized(item['title'])
+        if len(title) < 3:
+            continue
+        expected = item['page'] + known_offset
+        if expected < 1 or expected > total:
+            continue
+        matches = []
+        for page_number in range(max(1, expected - 1), min(total, expected + 1) + 1):
+            lines = page_headings[page_number - 1]
+            if not lines and ocr_available:
+                try:
+                    if fitz_doc is None:
+                        fitz_doc = fitz.open(stream=reader.stream.getvalue(), filetype='pdf') if hasattr(reader.stream, 'getvalue') else fitz.open(reader.stream.name)
+                    pix = fitz_doc[page_number - 1].get_pixmap(matrix=fitz.Matrix(1.5, 1.5), clip=fitz.Rect(0, 0, fitz_doc[page_number - 1].rect.width, fitz_doc[page_number - 1].rect.height * 0.35))
+                    image = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+                    lines = [normalized(line) for line in pytesseract.image_to_string(image, config='--psm 6', timeout=12).splitlines()]
+                except Exception:
+                    lines = []
+                page_headings[page_number - 1] = lines
+            if any(line == title or (line.startswith(str(item['number'])) and line[len(str(item['number'])):] == title) for line in lines):
+                matches.append(page_number)
+        if matches:
+            candidates.append((item, matches))
+    if fitz_doc is not None:
+        fitz_doc.close()
+    # For image-only chapter starts, a numbered contents page and a confirmed
+    # offset from earlier chapters are sufficient to propose draft boundaries.
+    # All proposals remain drafts for teacher review.
+    matched_numbers = {item['number'] for item, _ in candidates}
+    if candidates:
+        for item in items:
+            expected = item['page'] + known_offset
+            if item['number'] not in matched_numbers and 1 <= expected <= total:
+                candidates.append((item, [expected]))
+        candidates.sort(key=lambda pair: pair[0]['number'])
+    if not candidates:
+        return [], len(items)
+    offsets = {}
+    for item, matches in candidates:
+        for pdf_page in matches:
+            delta = pdf_page - item['page']
+            if -20 <= delta <= total:
+                offsets[delta] = offsets.get(delta, 0) + 1
+    best_offset = max(offsets, key=lambda d: (offsets[d], -abs(d))) if offsets else 0
+    verified = []
+    last_start = 0
+    for item, matches in candidates:
+        target = item['page'] + best_offset
+        start = min(matches, key=lambda page: abs(page - target))
+        if abs(start - target) > 2 or start <= last_start:
+            continue
+        verified.append({**item, 'pdf_start': start, 'pdf_offset': start - item['page']})
+        last_start = start
+    result = []
+    for index, item in enumerate(verified):
+        end = verified[index + 1]['pdf_start'] - 1 if index + 1 < len(verified) else total
+        # Printed end corresponds to PDF end, adjusted by this chapter's offset.
+        result.append((item, end - item['pdf_offset']))
+    return result, len(items) - len(verified)
+
+def resolve_tesseract():
+    """Locate Windows Tesseract even when its installer did not update PATH."""
+    import shutil
+    configured=os.environ.get('TESSERACT_CMD', '').strip().strip('"')
+    candidates=[configured, shutil.which('tesseract')]
+    if os.name=='nt':
+        for envvar in ('ProgramFiles','ProgramFiles(x86)','LOCALAPPDATA'):
+            root=os.environ.get(envvar)
+            if root:
+                candidates.append(str(Path(root)/'Tesseract-OCR'/'tesseract.exe'))
+    for candidate in candidates:
+        if candidate and Path(candidate).is_file():
+            return str(Path(candidate).resolve())
+    return None
+
 @router.get('/ocr-status')
 def ocr_status(user:User=Depends(current_user)):
     """Read-only diagnostics for the exact Python process running FastAPI."""
@@ -111,8 +300,9 @@ def ocr_status(user:User=Depends(current_user)):
     import shutil
     import sys
     packages = {name:importlib.util.find_spec(name) is not None for name in ('fitz','pytesseract','PIL','pypdf')}
-    tesseract = shutil.which('tesseract')
-    return {'python_executable':sys.executable,'packages':packages,'tesseract_on_path':bool(tesseract),
+    tesseract = resolve_tesseract()
+    return {'python_executable':sys.executable,'packages':packages,'tesseract_on_path':bool(shutil.which('tesseract')),
+            'tesseract_executable':str(tesseract) if tesseract else None,
             'ready':all(packages.values()) and bool(tesseract),
             'installation_hint':'From backend folder: .\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt; install Tesseract OCR for Windows and restart the backend.'}
 
@@ -146,18 +336,18 @@ async def upload_book(title:str=Form(...),board:str=Form(...),grade:int=Form(...
         reader=PdfReader(io.BytesIO(data))
         if len(reader.pages)>1000: raise ValueError('PDF exceeds 1000 pages')
         extracted='\n'.join((p.extract_text() or '') for p in reader.pages)
-        detected=detect_contents(reader)
+        detected, skipped = auto_chapter_ranges(reader)
         if not extracted.strip(): status='needs_ocr'
     except Exception:
         status='needs_review'
     book=Textbook(school_id=user.school_id,title=title.strip()[:220],board=board,grade=grade,subject=subject.strip()[:100],edition=edition.strip()[:100],filename=Path(file.filename).name[:255],storage_key=key,extraction_status=status,extracted_text=extracted,uploaded_by=user.id)
     db.add(book);db.flush()
-    for item, ending in page_ranges(detected):
+    for item, ending in detected:
         chapter=BookChapter(school_id=user.school_id,textbook_id=book.id,number=item['number'],title=normalized_title(item['title'],item['page']),source_text='',status='draft')
         db.add(chapter); db.flush()
-        db.add(ChapterPageRange(school_id=user.school_id,chapter_id=chapter.id,printed_start=item['page'],printed_end=ending,pdf_offset=0))
+        db.add(ChapterPageRange(school_id=user.school_id,chapter_id=chapter.id,printed_start=item['page'],printed_end=ending,pdf_offset=item['pdf_offset']))
     db.commit();db.refresh(book)
-    return {**book_json(book),'detected_chapters':len(detected)}
+    return {**book_json(book),'detected_chapters':len(detected),'chapters_outside_pdf_or_unverified':skipped}
 
 @router.get('/my-permissions')
 def my_permissions(user:User=Depends(current_user),db:Session=Depends(get_db)):
@@ -193,7 +383,12 @@ def read_book_pdf(book_id:int,user:User=Depends(current_user),db:Session=Depends
         visible=db.scalar(select(BookChapter.id).where(BookChapter.textbook_id==book.id,BookChapter.school_id==user.school_id,BookChapter.status=='published').limit(1))
         if visible is None: raise HTTPException(403,'Book is not published')
     path=STORAGE / str(user.school_id) / book.storage_key
-    if not path.is_file(): raise HTTPException(404,'PDF file not found')
+    if not path.is_file():
+        legacy = _LEGACY_STORAGE / str(user.school_id) / book.storage_key
+        if legacy.is_file():
+            path = legacy
+        else:
+            raise HTTPException(404, 'The uploaded PDF file is missing from server storage. Restore the original upload directory or re-upload this textbook.')
     return FileResponse(path,media_type='application/pdf',filename=book.filename or f'book-{book_id}.pdf',content_disposition_type='inline')
 
 @router.get('/{book_id}')
@@ -274,25 +469,43 @@ def bulk_review(book_id:int,data:BulkReview,user:User=Depends(current_user),db:S
 
 @router.post('/{book_id}/detect-chapters')
 def detect_existing_book(book_id:int,user:User=Depends(current_user),db:Session=Depends(get_db)):
+    """Use TOC or NCERT-style heading detection for the existing UI button."""
     require(db,user,'chapters.edit')
     book=book_or_404(db,user,book_id)
     target=STORAGE / str(user.school_id) / book.storage_key
-    if not target.is_file(): raise HTTPException(404,'Original PDF not found on server')
+    if not target.is_file():
+        legacy=_LEGACY_STORAGE / str(user.school_id) / book.storage_key
+        if legacy.is_file():target=legacy
+        else:raise HTTPException(404,'Original PDF not found on server')
     from pypdf import PdfReader
     try:
-        items=detect_contents(PdfReader(str(target)))
-    except Exception:
-        raise HTTPException(422,'Unable to read this PDF')
-    existing=set(db.scalars(select(BookChapter.number).where(BookChapter.textbook_id==book_id)))
+        items, skipped = auto_chapter_ranges(PdfReader(str(target)))
+    except Exception as exc:
+        raise HTTPException(422,f'Unable to read or detect chapters in PDF: {str(exc)[:160]}')
+    if not items:
+        raise HTTPException(422,'No reliable contents or chapter headings found in this PDF. Check OCR or add chapters manually.')
+    existing={c.number:c for c in db.scalars(select(BookChapter).where(BookChapter.textbook_id==book_id,BookChapter.school_id==user.school_id))}
     added=0
-    for item, ending in page_ranges(items):
-        if item['number'] not in existing:
+    updated=0
+    for item, ending in items:
+        chapter=existing.get(item['number'])
+        if chapter is None:
             chapter=BookChapter(school_id=user.school_id,textbook_id=book_id,number=item['number'],title=normalized_title(item['title'],item['page']),source_text='',status='draft')
-            db.add(chapter);db.flush()
-            db.add(ChapterPageRange(school_id=user.school_id,chapter_id=chapter.id,printed_start=item['page'],printed_end=ending,pdf_offset=0))
-            added+=1
+            db.add(chapter);db.flush();added+=1
+        r=db.scalar(select(ChapterPageRange).where(ChapterPageRange.school_id==user.school_id,ChapterPageRange.chapter_id==chapter.id))
+        if r is None:
+            r=ChapterPageRange(school_id=user.school_id,chapter_id=chapter.id)
+            db.add(r)
+        # Preserve any existing manually verified chapter page ranges.
+        if r.printed_start is not None:
+            continue
+        r.printed_start=item['page']
+        r.printed_end=ending
+        r.pdf_offset=item['pdf_offset']
+        r.source_available=False
+        updated+=1
     db.commit()
-    return {'detected':len(items),'added':added,'review_required':True}
+    return {'detected':len(items),'added':added,'updated':updated,'chapters_outside_pdf_or_unverified':skipped,'review_required':True}
 
 
 PERMISSIONS = ('books.upload','chapters.edit','content.generate','content.publish','exercises.create')
@@ -387,11 +600,24 @@ def set_chapter_pages(book_id:int,chapter_id:int,data:RangeUpdate,user:User=Depe
     r=db.scalar(select(ChapterPageRange).where(ChapterPageRange.chapter_id==c.id,ChapterPageRange.school_id==user.school_id))
     if not r:
         r=ChapterPageRange(school_id=user.school_id,chapter_id=c.id);db.add(r)
-    if data.printed_start is None or data.printed_end is None:
-        raise HTTPException(422,'Start and end pages are required. Use the book contents to recover missing pages.')
-    if data.printed_end < data.printed_start:
+    if data.printed_start is None:
+        raise HTTPException(422,'Start page is required.')
+    if data.printed_end is not None and data.printed_end < data.printed_start:
         raise HTTPException(422,'End page must not precede start page')
-    r.printed_start=data.printed_start;r.printed_end=data.printed_end;r.pdf_offset=data.pdf_offset if data.pdf_offset is not None else 0;r.source_available=False;c.source_text=''
+    offset=data.pdf_offset if data.pdf_offset is not None else (r.pdf_offset or 0)
+    if data.printed_start+offset<1:
+        raise HTTPException(422,'The page offset maps the chapter before PDF page 1')
+    if data.printed_end is not None and data.printed_end+offset<1:
+        raise HTTPException(422,'The ending page maps before PDF page 1')
+    book=book_or_404(db,user,book_id)
+    target=STORAGE/str(user.school_id)/book.storage_key
+    if target.is_file():
+        from pypdf import PdfReader
+        total=len(PdfReader(str(target)).pages)
+        last=(data.printed_end if data.printed_end is not None else data.printed_start)+offset
+        if last>total:
+            raise HTTPException(422,f'Page {last} exceeds the {total}-page uploaded PDF. Correct the PDF offset.')
+    r.printed_start=data.printed_start;r.printed_end=data.printed_end;r.pdf_offset=offset;r.source_available=False;c.source_text=''
     db.commit();return {'saved':True}
 
 @router.post('/{book_id}/chapters/{chapter_id}/extract')
@@ -430,11 +656,17 @@ def extract_chapter(book_id:int,chapter_id:int,user:User=Depends(current_user),d
             import fitz
             import pytesseract
             from PIL import Image
+            executable=resolve_tesseract()
+            if not executable:
+                raise HTTPException(503, 'Tesseract executable not found. Install Tesseract OCR or set TESSERACT_CMD to its full path, then restart FastAPI.')
+            pytesseract.pytesseract.tesseract_cmd=executable
             with fitz.open(str(target)) as doc:
                 for i in scanned:
                     pix=doc[i].get_pixmap(matrix=fitz.Matrix(2,2),alpha=False)
                     img=Image.frombytes('RGB',(pix.width,pix.height),pix.samples)
                     parts[i-first]=pytesseract.image_to_string(img,lang='eng').strip()
+        except HTTPException:
+            raise
         except ImportError as exc:
             raise HTTPException(503, 'OCR dependency missing in the running FastAPI Python environment: '+str(exc)+'. Run: python -m pip install -r requirements.txt and restart FastAPI. (PyMuPDF is imported as fitz.)')
         except Exception as exc:
@@ -500,25 +732,34 @@ def sync_chapter_pages(book_id:int,user:User=Depends(current_user),db:Session=De
     target=STORAGE/str(user.school_id)/book.storage_key
     if not target.is_file():raise HTTPException(404,'Original PDF missing')
     reader=PdfReader(str(target))
-    items=detect_contents(reader)
-    if not items:raise HTTPException(422,'No numbered contents page detected. Edit page ranges manually.')
-    by_number={i['number']:i for i in items}
+    detected,skipped=auto_chapter_ranges(reader)
+    if not detected:
+        raise HTTPException(422,'No reliable chapter headings or numbered contents detected. Use the manual editor for this PDF.')
     chapters=list(db.scalars(select(BookChapter).where(BookChapter.school_id==user.school_id,BookChapter.textbook_id==book_id)))
+    by_number={c.number:c for c in chapters}
     changed=0
-    for c in chapters:
-        item=by_number.get(c.number)
-        if not item:continue
+    created=0
+    for item,ending in detected:
+        c=by_number.get(item['number'])
+        if c is None:
+            c=BookChapter(school_id=user.school_id,textbook_id=book_id,number=item['number'],
+                          title=item['title'],source_text='',status='draft')
+            db.add(c);db.flush();created+=1
         r=db.scalar(select(ChapterPageRange).where(ChapterPageRange.school_id==user.school_id,ChapterPageRange.chapter_id==c.id))
         if not r:
             r=ChapterPageRange(school_id=user.school_id,chapter_id=c.id)
             db.add(r)
-        next_item=next((x for x in items if x['number']>c.number),None)
-        new_end=next_item['page']-1 if next_item else None
-        if (r.printed_start,r.printed_end)!=(item['page'],new_end) or c.title!=normalized_title(item['title'],item['page']):
-            r.printed_start=item['page'];r.printed_end=new_end;r.pdf_offset=0
-            r.source_available=False;c.source_text='';c.title=normalized_title(item['title'],item['page']);changed+=1
+        # Do not silently overwrite teacher-reviewed manual boundaries.
+        if r.printed_start is not None and r.source_available:
+            continue
+        if (r.printed_start,r.printed_end,r.pdf_offset)!=(item['page'],ending,item['pdf_offset']):
+            r.printed_start=item['page'];r.printed_end=ending;r.pdf_offset=item['pdf_offset']
+            r.source_available=False
+            if c.status!='published':
+                c.title=item['title']
+            changed+=1
     db.commit()
-    return {'updated':changed,'detected':len(items),'note':'Verify PDF offset and chapter ranges before extraction.'}
+    return {'updated':changed,'created':created,'detected':len(detected),'note':'Review automatically detected chapter boundaries before publishing.'}
 
 
 class QuestionItem(BaseModel):

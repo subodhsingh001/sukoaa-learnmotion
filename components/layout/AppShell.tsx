@@ -8,6 +8,15 @@ import RoleGuard from "./RoleGuard";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  useEffect(() => {
+    try { setCollapsed(localStorage.getItem("sukoaa-sidebar-collapsed") === "true"); } catch {}
+  }, []);
+  const toggleSidebar = () => {
+    const next = !collapsed;
+    setCollapsed(next);
+    try { localStorage.setItem("sukoaa-sidebar-collapsed", String(next)); } catch {}
+  };
   const pathname = usePathname();
   useEffect(() => setMenuOpen(false), [pathname]);
 
@@ -16,8 +25,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthProvider>
-      <div className="sk-shell">
-        <Sidebar open={menuOpen} close={() => setMenuOpen(false)} />
+      <div className={`sk-shell${collapsed ? " sk-collapsed" : ""}`}>
+        <Sidebar open={menuOpen} close={() => setMenuOpen(false)} collapsed={collapsed} toggleCollapsed={toggleSidebar} />
         <div className="sk-main">
           <Topbar onMenuOpen={() => setMenuOpen(true)} />
           <main className="sk-content"><RoleGuard>{children}</RoleGuard></main>

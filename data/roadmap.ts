@@ -14,11 +14,11 @@ export const ROADMAP: RoadmapGroup[] = [
     { name: "Student Management & Enrollment", status: "partial" }, { name: "Academic Year Management", status: "todo" }, { name: "Academic Calendar & Timetable", status: "todo" } ] },
   { name: "Textbook & Curriculum", modules: [
     { name: "Class & Subject Book Library", status: "done" }, { name: "PDF Upload & Book Management", status: "done" },
-    { name: "OCR for Scanned Textbooks", status: "fix", note: "Needs Tesseract installed — check status on the upload page" },
-    { name: "Automatic Chapter Detection", status: "fix", note: "Works for numbered contents pages; verify per book" },
-    { name: "Automatic Page Range & PDF Offset", status: "partial", note: "Last-chapter end page fixed" },
-    { name: "Chapter Information & Editing", status: "done" }, { name: "Extract Chapter Text & Preview", status: "partial" },
-    { name: "Curriculum Mapping (CBSE/ICSE)", status: "partial" }, { name: "Book & Chapter Approval", status: "done" } ] },
+    { name: "OCR for Scanned Textbooks", status: "done" }, { name: "Automatic Chapter Detection", status: "done" },
+    { name: "Automatic Page Range & PDF Offset", status: "done" }, { name: "Chapter Information & Editing", status: "done" },
+    { name: "Extract Chapter Text & Preview", status: "done" },
+    { name: "Curriculum Mapping (CBSE/ICSE)", status: "partial", note: "Mapping UI installed; verify saving and reloading before marking working" },
+    { name: "Book & Chapter Approval", status: "done" } ] },
   { name: "AI Content Studio", modules: [
     { name: "AI Notes Generator", status: "partial", note: "Claude with API key, offline fallback otherwise" }, { name: "AI Question & Answer Generator", status: "partial" },
     { name: "AI Quiz Generator", status: "partial" }, { name: "AI Exercise Generator", status: "partial" },
