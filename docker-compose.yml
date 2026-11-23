@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: sukoaa
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: sukoaa
+    ports:
+      - "127.0.0.1:15432:5432"
+    volumes:
+      - sukoaa_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sukoaa"]
+      interval: 5s
+      retries: 10
+volumes:
+  sukoaa_pg:

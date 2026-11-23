@@ -1,0 +1,4 @@
+"use client";
+import {useRef} from 'react';import {useFrame} from '@react-three/fiber';import type * as THREE from 'three';
+export type Shape='cube'|'sphere'|'cylinder'|'cone';
+export default function GeometryScene({shape,rotate,wireframe,scale=1}:{shape:Shape;rotate:boolean;wireframe:boolean;scale?:number}){const ref=useRef<THREE.Group>(null);useFrame((_,dt)=>{if(rotate&&ref.current)ref.current.rotation.y+=Math.min(dt,.08)*.5});return <group ref={ref} scale={scale}><mesh><>{shape==='cube'?<boxGeometry args={[2.5,2.5,2.5]}/>:shape==='sphere'?<sphereGeometry args={[1.55,48,32]}/>:shape==='cylinder'?<cylinderGeometry args={[1.2,1.2,2.7,48]}/>:<coneGeometry args={[1.5,2.8,48]}/>}</><meshStandardMaterial color="#8170e8" roughness={.4} metalness={.1} wireframe={wireframe} side={2}/></mesh></group>}

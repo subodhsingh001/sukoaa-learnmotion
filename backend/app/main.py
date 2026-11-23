@@ -1,0 +1,138 @@
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, EmailStr, Field
+from sqlalchemy import select, func
+from sqlalchemy.orm import Session
+from .config import settings
+from .db import Base, engine, get_db
+from .models import User, Lesson, Progress, Classroom, Enrollment
+from .security import current_user, passwords, create_token
+from .school_routes import router as school_router
+from .assessment_routes import router as assessment_router
+from .curriculum_routes import router as curriculum_router
+from .textbook_routes import router as textbook_router
+from .ai_routes import router as ai_router
+from .student_routes import router as student_router
+from .auth_routes import router as auth_router
+import time
+from collections import defaultdict, deque
+from fastapi import Request
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Local prototype only. Use Alembic migrations before production.
+    Base.metadata.create_all(bind=engine)
+    with next(get_db()) as db:
+        for slug,title,subject in [
+            ('solar-system','Solar System','Science'),('atomic-structure','Atomic Structure','Chemistry'),
+            ('geometry','3D Geometry','Mathematics'),('force-and-motion','Force and Motion','Physics'),
+            ('human-body','Human Body','Biology'),('photosynthesis','Photosynthesis','Biology'),('fractions','Fractions','Mathematics')]:
+            if not db.get(Lesson,slug): db.add(Lesson(slug=slug,title=title,subject=subject))
+        db.commit()
+    yield
+
+app=FastAPI(title='SUKOAA Learning API',version='0.1.0',lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=[
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS",
+    ],
+    allow_headers=["*"],
+)
+class Login(BaseModel):
+    email: EmailStr
+    password: str
+class ProgressInput(BaseModel):
+    completed: bool = True
+    score: int | None = Field(default=None,ge=0)
+    total: int | None = Field(default=None,ge=1)
+
+@app.get('/health')
+def health(): return {'status':'ok'}
+
+_failed=defaultdict(deque)
+def _throttle(key:str):
+    """Small in-memory brute-force guard. Use Redis or a gateway rate-limit when running several servers."""
+    now=time.monotonic();q=_failed[key]
+    while q and now-q[0]>settings.login_window_seconds:q.popleft()
+    if len(q)>=settings.login_max_attempts:
+        raise HTTPException(429,'Too many failed sign-in attempts. Please wait a few minutes and try again.')
+
+@app.post('/auth/login')
+def login(data: Login,request:Request,db:Session=Depends(get_db)):
+    email=str(data.email).lower()
+    key=f"{email}|{request.client.host if request.client else '-'}"
+    _throttle(key)
+    user=db.scalar(select(User).where(User.email==email))
+    if not user or not passwords.verify(data.password,user.password_hash):
+        _failed[key].append(time.monotonic())
+        raise HTTPException(401,'Incorrect email or password')
+    if not user.is_active:
+        raise HTTPException(403,'Account disabled')
+    _failed.pop(key,None)
+    return {'access_token':create_token(user),'token_type':'bearer'}
+
+@app.get('/me')
+def me(user:User=Depends(current_user)):
+    return {'id':user.id,'name':user.full_name,'email':user.email,'role':user.role,'school_id':user.school_id,'is_active':user.is_active}
+
+@app.get('/lessons')
+def lessons(user:User=Depends(current_user),db:Session=Depends(get_db)):
+    return [{'slug':x.slug,'title':x.title,'subject':x.subject} for x in db.scalars(select(Lesson).order_by(Lesson.title))]
+
+@app.get('/progress')
+def progress(user:User=Depends(current_user),db:Session=Depends(get_db)):
+    return [{'lesson_slug':p.lesson_slug,'completed':p.completed,'score':p.score,'total':p.total,'updated_at':p.updated_at} for p in db.scalars(select(Progress).where(Progress.user_id==user.id,Progress.school_id==user.school_id))]
+
+@app.put('/progress/{slug}')
+def save_progress(slug:str,data:ProgressInput,user:User=Depends(current_user),db:Session=Depends(get_db)):
+    if user.role!='student': raise HTTPException(403,'Only students may submit progress')
+    if not db.get(Lesson,slug): raise HTTPException(404,'Unknown lesson')
+    if data.score is not None or data.total is not None:
+        raise HTTPException(422,'Submit quiz answers via /assessments/quizzes/{slug}/submit')
+    if (data.score is None)!=(data.total is None) or (data.score is not None and data.score>data.total):
+        raise HTTPException(422,'Invalid quiz score')
+    p=db.scalar(select(Progress).where(Progress.user_id==user.id,Progress.school_id==user.school_id,Progress.lesson_slug==slug))
+    if p is None:
+        p=Progress(school_id=user.school_id,user_id=user.id,lesson_slug=slug)
+        db.add(p)
+    p.completed=p.completed or data.completed
+    if data.score is not None:
+        p.score=data.score;p.total=data.total
+    db.commit()
+    return {'saved':True,'lesson_slug':slug}
+
+@app.get('/teacher/summary')
+def teacher_summary(user:User=Depends(current_user),db:Session=Depends(get_db)):
+    if user.role not in ('teacher','admin'): raise HTTPException(403,'Teacher or admin required')
+    # Teacher sees only students in their assigned classrooms; admin sees school-wide data.
+    students=select(User).where(User.school_id==user.school_id,User.role=='student')
+    if user.role=='teacher':
+        students=students.where(User.id.in_(select(Enrollment.student_id).join(Classroom,Enrollment.classroom_id==Classroom.id).where(Classroom.school_id==user.school_id,Classroom.teacher_id==user.id)))
+    rows=[]
+    for student in db.scalars(students):
+        completed=db.scalar(select(func.count()).select_from(Progress).where(Progress.school_id==user.school_id,Progress.user_id==student.id,Progress.completed.is_(True)))
+        rows.append({'student_id':student.id,'name':student.full_name,'completed_lessons':completed})
+    return {'students':rows}
+
+app.include_router(school_router)
+
+app.include_router(assessment_router)
+
+app.include_router(curriculum_router)
+app.include_router(textbook_router)
+app.include_router(ai_router)
+app.include_router(student_router)
+
+app.include_router(auth_router)

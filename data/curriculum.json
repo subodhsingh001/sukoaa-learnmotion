@@ -1,0 +1,4598 @@
+[
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Living World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Force and Motion",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Social Science",
+    "chapterNumber": 1,
+    "chapterTitle": "History and Civilisations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Social Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Geography and Environment",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Social Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Civics and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Living World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Force and Motion",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Social Science",
+    "chapterNumber": 1,
+    "chapterTitle": "History and Civilisations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Social Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Geography and Environment",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Social Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Civics and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Living World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Force and Motion",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Social Science",
+    "chapterNumber": 1,
+    "chapterTitle": "History and Civilisations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Social Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Geography and Environment",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Social Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Civics and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Real Numbers and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Coordinate Geometry",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Probability",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Physics: Motion and Energy",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemistry: Atoms and Reactions",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Biology: Life Processes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Writing and Grammar",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Social Science",
+    "chapterNumber": 1,
+    "chapterTitle": "History and Society",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Social Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Geography and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Social Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Political Science and Economics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Prose and Poetry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Programming Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Cyber Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Real Numbers and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Coordinate Geometry",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Probability",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Physics: Motion and Energy",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemistry: Atoms and Reactions",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Biology: Life Processes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Writing and Grammar",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Social Science",
+    "chapterNumber": 1,
+    "chapterTitle": "History and Society",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Social Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Geography and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Social Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Political Science and Economics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Prose and Poetry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Programming Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Cyber Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Mechanics",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Electricity and Magnetism",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Waves and Optics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Atomic Structure and Bonding",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemical Reactions",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Organic Chemistry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Cell Biology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Physiology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Genetics and Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Functions and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Calculus",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Probability and Statistics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Advanced Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Python Programming",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data Structures",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Databases and Networks",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 1,
+    "chapterTitle": "World and Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 2,
+    "chapterTitle": "Sources and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 3,
+    "chapterTitle": "Modern History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Physical Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Environment and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Constitution and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Political Theory",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Global Politics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 1,
+    "chapterTitle": "Microeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 2,
+    "chapterTitle": "Macroeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Development",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 1,
+    "chapterTitle": "Accounting Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 2,
+    "chapterTitle": "Financial Statements",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 3,
+    "chapterTitle": "Accounting Applications",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "Business Organisation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Management",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Finance and Marketing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Mechanics",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Electricity and Magnetism",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Waves and Optics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Atomic Structure and Bonding",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemical Reactions",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Organic Chemistry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Cell Biology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Physiology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Genetics and Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Functions and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Calculus",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Probability and Statistics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Advanced Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Python Programming",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data Structures",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Databases and Networks",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 1,
+    "chapterTitle": "World and Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 2,
+    "chapterTitle": "Sources and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 3,
+    "chapterTitle": "Modern History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Physical Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Environment and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Constitution and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Political Theory",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Global Politics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 1,
+    "chapterTitle": "Microeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 2,
+    "chapterTitle": "Macroeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Development",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 1,
+    "chapterTitle": "Accounting Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 2,
+    "chapterTitle": "Financial Statements",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 3,
+    "chapterTitle": "Accounting Applications",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "Business Organisation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Management",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Finance and Marketing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "General Knowledge",
+    "chapterNumber": 1,
+    "chapterTitle": "Our World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "General Knowledge",
+    "chapterNumber": 2,
+    "chapterTitle": "Science Around Us",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 1,
+    "subject": "General Knowledge",
+    "chapterNumber": 3,
+    "chapterTitle": "People and Places",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "General Knowledge",
+    "chapterNumber": 1,
+    "chapterTitle": "Our World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "General Knowledge",
+    "chapterNumber": 2,
+    "chapterTitle": "Science Around Us",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 2,
+    "subject": "General Knowledge",
+    "chapterNumber": 3,
+    "chapterTitle": "People and Places",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "General Knowledge",
+    "chapterNumber": 1,
+    "chapterTitle": "Our World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "General Knowledge",
+    "chapterNumber": 2,
+    "chapterTitle": "Science Around Us",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 3,
+    "subject": "General Knowledge",
+    "chapterNumber": 3,
+    "chapterTitle": "People and Places",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "General Knowledge",
+    "chapterNumber": 1,
+    "chapterTitle": "Our World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "General Knowledge",
+    "chapterNumber": 2,
+    "chapterTitle": "Science Around Us",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 4,
+    "subject": "General Knowledge",
+    "chapterNumber": 3,
+    "chapterTitle": "People and Places",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Numbers and Place Value",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Addition and Subtraction",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Shapes and Patterns",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Sentences",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Creative Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "My Family and Community",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Plants and Animals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Environmental Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Water and Weather",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Reading and Vocabulary",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar Practice",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Stories and Poems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "General Knowledge",
+    "chapterNumber": 1,
+    "chapterTitle": "Our World",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "General Knowledge",
+    "chapterNumber": 2,
+    "chapterTitle": "Science Around Us",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 5,
+    "subject": "General Knowledge",
+    "chapterNumber": 3,
+    "chapterTitle": "People and Places",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Motion and Forces",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Light and Sound",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Electricity",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Atoms and Molecules",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Chemical Changes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Living Organisms",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Body",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "History and Civics",
+    "chapterNumber": 1,
+    "chapterTitle": "Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "History and Civics",
+    "chapterNumber": 2,
+    "chapterTitle": "World History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "History and Civics",
+    "chapterNumber": 3,
+    "chapterTitle": "Government and Citizenship",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Earth and Maps",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Climate and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Motion and Forces",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Light and Sound",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Electricity",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Atoms and Molecules",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Chemical Changes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Living Organisms",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Body",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "History and Civics",
+    "chapterNumber": 1,
+    "chapterTitle": "Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "History and Civics",
+    "chapterNumber": 2,
+    "chapterTitle": "World History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "History and Civics",
+    "chapterNumber": 3,
+    "chapterTitle": "Government and Citizenship",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Earth and Maps",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Climate and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Number Systems",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Algebra and Equations",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Geometry and Measurement",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Reading",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Speaking and Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Composition",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Reading Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Digital Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Algorithms and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Internet Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Motion and Forces",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Light and Sound",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Electricity",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Atoms and Molecules",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Chemical Changes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Living Organisms",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Body",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "History and Civics",
+    "chapterNumber": 1,
+    "chapterTitle": "Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "History and Civics",
+    "chapterNumber": 2,
+    "chapterTitle": "World History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "History and Civics",
+    "chapterNumber": 3,
+    "chapterTitle": "Government and Citizenship",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Earth and Maps",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Climate and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Real Numbers and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Coordinate Geometry",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Probability",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Writing and Grammar",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Prose and Poetry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Programming Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Cyber Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Motion and Forces",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Light and Sound",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Electricity",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Atoms and Molecules",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Chemical Changes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Living Organisms",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Body",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "History and Civics",
+    "chapterNumber": 1,
+    "chapterTitle": "Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "History and Civics",
+    "chapterNumber": 2,
+    "chapterTitle": "World History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "History and Civics",
+    "chapterNumber": 3,
+    "chapterTitle": "Government and Citizenship",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Earth and Maps",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Climate and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 9,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Real Numbers and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Coordinate Geometry",
+    "lessonSlug": "geometry",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Probability",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Writing and Grammar",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication Skills",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 1,
+    "chapterTitle": "Prose and Poetry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 2,
+    "chapterTitle": "Grammar and Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Hindi",
+    "chapterNumber": 3,
+    "chapterTitle": "Comprehension",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Programming Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data and Logic",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Cyber Safety",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Motion and Forces",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Light and Sound",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Electricity",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Matter and Materials",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Atoms and Molecules",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Chemical Changes",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Living Organisms",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Body",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "History and Civics",
+    "chapterNumber": 1,
+    "chapterTitle": "Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "History and Civics",
+    "chapterNumber": 2,
+    "chapterTitle": "World History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "History and Civics",
+    "chapterNumber": 3,
+    "chapterTitle": "Government and Citizenship",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Earth and Maps",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Climate and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 10,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Mechanics",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Electricity and Magnetism",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Waves and Optics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Atomic Structure and Bonding",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemical Reactions",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Organic Chemistry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Cell Biology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Physiology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Genetics and Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Functions and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Calculus",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Probability and Statistics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Advanced Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Python Programming",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data Structures",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Databases and Networks",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 1,
+    "chapterTitle": "World and Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 2,
+    "chapterTitle": "Sources and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "History",
+    "chapterNumber": 3,
+    "chapterTitle": "Modern History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Physical Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Environment and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Constitution and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Political Theory",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Political Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Global Politics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 1,
+    "chapterTitle": "Microeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 2,
+    "chapterTitle": "Macroeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Economics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Development",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 1,
+    "chapterTitle": "Accounting Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 2,
+    "chapterTitle": "Financial Statements",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Accountancy",
+    "chapterNumber": 3,
+    "chapterTitle": "Accounting Applications",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "Business Organisation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Management",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 11,
+    "subject": "Business Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Finance and Marketing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 1,
+    "chapterTitle": "Mechanics",
+    "lessonSlug": "force-and-motion",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 2,
+    "chapterTitle": "Electricity and Magnetism",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Physics",
+    "chapterNumber": 3,
+    "chapterTitle": "Waves and Optics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 1,
+    "chapterTitle": "Atomic Structure and Bonding",
+    "lessonSlug": "atomic-structure",
+    "status": "interactive"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 2,
+    "chapterTitle": "Chemical Reactions",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Chemistry",
+    "chapterNumber": 3,
+    "chapterTitle": "Organic Chemistry",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 1,
+    "chapterTitle": "Cell Biology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Physiology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Biology",
+    "chapterNumber": 3,
+    "chapterTitle": "Genetics and Ecology",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 1,
+    "chapterTitle": "Functions and Algebra",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 2,
+    "chapterTitle": "Calculus",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Mathematics",
+    "chapterNumber": 3,
+    "chapterTitle": "Probability and Statistics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 1,
+    "chapterTitle": "Literature",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 2,
+    "chapterTitle": "Advanced Writing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "English",
+    "chapterNumber": 3,
+    "chapterTitle": "Communication",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Python Programming",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Data Structures",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Computer Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Databases and Networks",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 1,
+    "chapterTitle": "World and Indian History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 2,
+    "chapterTitle": "Sources and Interpretation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "History",
+    "chapterNumber": 3,
+    "chapterTitle": "Modern History",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 1,
+    "chapterTitle": "Physical Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 2,
+    "chapterTitle": "Human Geography",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Geography",
+    "chapterNumber": 3,
+    "chapterTitle": "Environment and Resources",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 1,
+    "chapterTitle": "Constitution and Government",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 2,
+    "chapterTitle": "Political Theory",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Political Science",
+    "chapterNumber": 3,
+    "chapterTitle": "Global Politics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 1,
+    "chapterTitle": "Microeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 2,
+    "chapterTitle": "Macroeconomics",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Economics",
+    "chapterNumber": 3,
+    "chapterTitle": "Statistics and Development",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 1,
+    "chapterTitle": "Accounting Fundamentals",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 2,
+    "chapterTitle": "Financial Statements",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Accountancy",
+    "chapterNumber": 3,
+    "chapterTitle": "Accounting Applications",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 1,
+    "chapterTitle": "Business Organisation",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 2,
+    "chapterTitle": "Management",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 12,
+    "subject": "Business Studies",
+    "chapterNumber": 3,
+    "chapterTitle": "Finance and Marketing",
+    "lessonSlug": null,
+    "status": "planned"
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 6,
+    "subject": "Science",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 7,
+    "subject": "Science",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  },
+  {
+    "board": "CBSE/NCERT",
+    "classLevel": 8,
+    "subject": "Science",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 6,
+    "subject": "Physics",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 7,
+    "subject": "Physics",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  },
+  {
+    "board": "ICSE/ISC",
+    "classLevel": 8,
+    "subject": "Physics",
+    "chapterNumber": 99,
+    "chapterTitle": "Solar System \u2014 Interactive Enrichment",
+    "lessonSlug": "solar-system",
+    "status": "interactive",
+    "enrichment": true
+  }
+]
